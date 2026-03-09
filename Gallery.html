@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Gallery | SELFLLC - Sustainable Infrastructure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a4231",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#151d1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(21, 29, 26, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<!-- Header -->
+<header class="sticky top-0 z-50 glass-nav border-b border-primary/20">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<h1 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase">SELFLLC</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="project.html">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all">
+                    Get Involved
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Wide panoramic view of a massive solar energy farm at sunset" style="background-image: linear-gradient(to bottom, rgba(21, 29, 26, 0.7), rgba(21, 29, 26, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrrHv0bJQAeqvc0kNvhEexYQDB-tY1Af_DoNgY4wL1OZAEWxoTVR2CKXERlGBoIbIwMmnkGJ5SMs9QwYVrS-Scs1Maa3iX8LADJ4po6spND620408bQpHEp-KO_iovXFtgLKXN_x5iT3UVoGxZ1rheMO-kZhIirnqvcVeqsAXBrwhiJoofX4WM2taZGry7IlG5732OHz61c27lCk_gg78HzGj_UmRV_JOaQdsQCM0huK4fiBIC_bO0FBIZ-8ik-Yqoc1TV-LlSYR_t');">
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                    Global Portfolio
+                </span>
+<h2 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+                    Pioneering Sustainable Infrastructure
+                </h2>
+<p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                    Showcasing our commitment to a carbon-neutral future through innovative energy parks and ecological reserves.
+                </p>
+</div>
+</section>
+<!-- Filter Bar -->
+<div class="bg-slate-100 dark:bg-primary/5 border-b border-primary/10 sticky top-20 z-40">
+<div class="max-w-7xl mx-auto px-6 overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-8 py-4 min-w-max">
+<button class="flex items-center gap-2 text-sm font-bold border-b-2 border-primary text-primary pb-2">
+                        All Projects
+                    </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-2">
+                        Solar Installations
+                    </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-2">
+                        Wind Energy
+                    </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-2">
+                        Eco-Parks
+                    </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-2">
+                        Sustainable Landscaping
+                    </button>
+</div>
+</div>
+</div>
+<!-- Project Grid -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Solar -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Colors and codes 295 reference image" style="background-image: url('COLORS N CODES-295.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Solar</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Accra Commercial Array</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            A high-efficiency rooftop installation providing 2MW of clean energy to the Accra central business district.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Wind -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Colors and codes 337 reference image" style="background-image: url('COLORS N CODES-337.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Wind</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Northern Region Wind Farm</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            Harnessing coastal winds to power over 15,000 households with sustainable, reliable electricity.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Landscaping -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="20190726 reference image" style="background-image: url('20190726_131601.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Landscaping</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">East Legon Eco-Reserve</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            Restoring biodiversity in urban spaces through native flora replanting and water conservation systems.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Infrastructure -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Colors and codes 277 reference image" style="background-image: url('COLORS N CODES-277.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Infrastructure</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Vertical Garden Towers</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            Redefining high-rise living with integrated vertical forests that improve air quality and thermal insulation.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5: Solar -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="20190714 reference image" style="background-image: url('20190714_161255.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Solar</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">The Cantonments Village</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            A smart residential community optimized for zero-net energy consumption via integrated solar grids.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6: Landscaping -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="20190716 reference image" style="background-image: url('20190716_163438.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Landscaping</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Botanical Innovation Hub</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                            Research facility dedicated to study drought-resistant crops and sustainable urban farming techniques.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold border-b border-transparent hover:border-primary transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 7: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j1" style="background-image: url('j1.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Team-Led Beachfront Waste Collection Drive</h3>
+</div>
+</div>
+<!-- Card 8: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j2" style="background-image: url('j2.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Rwanda Ambassador to Ghana with SELF Founder During Cleanup</h3>
+</div>
+</div>
+<!-- Card 9: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j3" style="background-image: url('j3.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Volunteers Sort and Bag Shoreline Plastics</h3>
+</div>
+</div>
+<!-- Card 10: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j4" style="background-image: url('j4.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Community Crew Clearing Mixed Beach Debris</h3>
+</div>
+</div>
+<!-- Card 11: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j5" style="background-image: url('j5.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Final Sweep and Collection at the Cleanup Point</h3>
+</div>
+</div>
+<!-- Card 12: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j6" style="background-image: url('j6.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Stakeholder Welcome and Partnership Handshake</h3>
+</div>
+</div>
+<!-- Card 13: New Gallery Image -->
+<div class="group bg-white dark:bg-primary/10 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="New gallery image j7" style="background-image: url('j7.jpg');"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Community Outreach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Field Briefing Before Community Cleaning Operations</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary/10 py-20 px-6 border-t border-primary/20">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl font-black mb-6">Have a project in mind?</h2>
+<p class="text-slate-500 dark:text-slate-400 mb-10 text-lg">
+                    Partner with us to create the next generation of ecological infrastructure. 
+                    Let's discuss how we can bring sustainable energy to your community.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/90 transition-all">
+                        Schedule a Consultation
+                    </button>
+<button class="w-full sm:w-auto border border-primary text-primary px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all">
+                        Download Impact Report
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-16 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+<h2 class="text-xl font-black text-white uppercase tracking-tighter">SELFLLC</h2>
+</div>
+<p class="text-sm leading-relaxed">
+                        Redefining infrastructure through sustainability and renewable energy integration. 
+                        Building today for a greener tomorrow.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Project Portfolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability Metrics</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Community Impact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Contact Us</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            info@selfllc.org
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            Accra, Ghana
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+                            +233 (0) 555 123 456
+                        </li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Location</h4>
+<div class="rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all">
+<img alt="Map" class="w-full h-32 object-cover" data-alt="Simplified map view of Accra Ghana" data-location="Accra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCpCeGhWEWws6O60eCGdzBvMob7k-rm-lIx-BfipEOEBIAI6jm5Zl0to_sWjMtEgnHBH5KnT91K5QD6AEWi0IqW1tyAd5zwryDvbEZl_paYUODH48F6vL4yOga4AurJGGQ3FXMl1lfwT4VYJSoYt8p5iVGliAxwQ_fmMNzc88qtkAUrOy-qPEBOzOQqKLoEBKdJKCyREFQ2sztbRSWDk7hRKbevc6VWR5yxNCb82UnYfoSePAg8PVQsZ4C-agYEgxhOZdS2KL8xHVK"/>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:row items-center justify-between gap-4 text-xs font-medium">
+<p>© 2024 SELFLLC. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
